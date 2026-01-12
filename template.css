@@ -399,13 +399,13 @@ h2 {
 :root {--selection: 170, 95, 200;}
 
 .backgroundContainer.withBackdrop {
-    background: linear-gradient(
-        135deg,
-        #ff8c00 0%,
-        #ff6a00 20%,
-        #1a1a1a 55%,
-        #000000 100%
-    ) !important;
+  background: linear-gradient(
+    135deg,
+    #ff8c00 0%,
+    #ff6a00 30%,
+    #1a1a1a 65%,
+    #000000 100%
+  ) !important;
 }
 
 .backgroundProgress > div {
