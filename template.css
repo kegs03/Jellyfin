@@ -21,7 +21,13 @@ html {
 }
 
 .backgroundContainer, .preload {
-  background-color: rgb(var(--tint));
+  background: linear-gradient(
+        135deg,
+        #ff8c00 0%,
+        #ff6a00 20%,
+        #1a1a1a 55%,
+        #000000 100%
+    ) !important;
 }
 
 .itemsContainer {
