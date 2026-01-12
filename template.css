@@ -6278,3 +6278,10 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
     vertical-align: middle;
   }
 }
+
+/*Hide logo*/
+.pageTitleWithLogo,
+.headerLogo,
+.headerButton.headerLogo {
+  display: none !important;
+}
