@@ -1,0 +1,2 @@
+# Jellyfin
+CSS for Jellyfin
