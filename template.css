@@ -20,14 +20,8 @@ html {
   color: rgba(255, 255, 255, 1);
 }
 
-.backgroundContainer{
-  background: linear-gradient(
-        135deg,
-        #ff8c00 0%,
-        #ff6a00 20%,
-        #1a1a1a 55%,
-        #000000 100%
-    ) !important;
+.backgroundContainer, .preload {
+  background-color: rgb(var(--tint));
 }
 
 .itemsContainer {
@@ -405,7 +399,13 @@ h2 {
 :root {--selection: 170, 95, 200;}
 
 .backgroundContainer.withBackdrop {
-  background-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(
+        135deg,
+        #ff8c00 0%,
+        #ff6a00 20%,
+        #1a1a1a 55%,
+        #000000 100%
+    ) !important;
 }
 
 .backgroundProgress > div {
