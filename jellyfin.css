@@ -1,0 +1,133 @@
+/* FONT STYLE */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap);
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3 {
+   font-family: 'Open Sans', sans-serif; text-transform: uppercase;
+}
+h2, h3 {
+   letter-spacing: .4px;
+}
+
+/* Tweak list */
+.playedIndicator {
+    background: #00000058 !important
+}
+
+.layout-mobile .itemExternalLinks {
+    display: block !important
+}
+
+.guideChannelNumber {
+    display: none;
+}
+
+/*Recently Added Movies*/
+#homeTab
+  > div
+  > div.section2
+  > div:nth-child(1)
+  > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left
+  > a
+  > h2 {
+  display: none;
+}
+#homeTab
+  > div
+  > div.section2
+  > div:nth-child(1)
+  > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left
+  > a
+  > span {
+  display: none;
+}
+#homeTab
+  > div
+  > div.section2
+  > div:nth-child(1)
+  > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left
+  > a:after {
+  content: 'Recently Added Movies ›';
+  font-size: 24px;
+  font-weight: normal;
+  }
+
+
+/*Transparent Top Menu*/
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/*Image Edge Rounded*/
+.cardContent-button,
+.itemDetailImage {
+  border-radius: 0.25em;
+}
+
+/* Narrow the login form */
+#loginPage .readOnlyContent,
+#loginPage form {
+  max-width: 22em;
+}
+
+#loginPage h1 {
+  display: none;
+}
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  margin-top: 50px;
+}
+
+#loginPage .raised.cancel.block.btnManual.emby-button {
+  display: none;
+}
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+  display: none;
+}
+
+/* Size episode preview images in a more compact way */
+.listItemImage.listItemImage-large.itemAction.lazy {
+  height: 110px;
+}
+.listItem-content {
+  height: 115px;
+}
+.secondary.listItem-overview.listItemBodyText {
+  height: 61px;
+  margin: 0;
+}
+
+/* Stylised and Smaller Cast & Crew Info */
+
+
+/*Custom Background Color*/
+.backgroundContainer,
+.dialog,
+html {
+  background: linear-gradient(180deg, #0a1418 0%, #060d10 100%);
+}
+
+/* CENTER THE MOUSEOVER BUTTONS */
+#castContent .cardOverlayButton-br {bottom: 4%; right: 15%; width: 70%;}
+#castContent .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light {margin:auto;}
+
+
+/*Custom Border Color*/
+.emby-input,
+.emby-textarea,
+.emby-select {
+    border: 1px solid rgba(255, 140, 26, 0.45);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/*Hide logo*/
+.pageTitleWithLogo,
+.headerLogo,
+.headerButton.headerLogo {
+  display: none !important;
+}
