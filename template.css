@@ -20,7 +20,7 @@ html {
   color: rgba(255, 255, 255, 1);
 }
 
-.backgroundContainer, .preload {
+.backgroundContainer{
   background: linear-gradient(
         135deg,
         #ff8c00 0%,
