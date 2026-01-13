@@ -7,8 +7,8 @@
   --pageGradient: linear-gradient(135deg, #ff8a00 0%, #2b0f00 100%);
   --pageGradientDim: linear-gradient(135deg, rgba(255, 138, 0, 0.86) 0%, rgba(43, 15, 0, 0.86) 100%);
   --loginGradient: var(--pageGradient);
-  --tint: 17, 14, 30; 
-  --tint2: 71, 51, 145; 
+  --tint: 22, 16, 12; 
+  --tint2: 200, 98, 34; 
   --rounding: 0.8em;
 }
 
