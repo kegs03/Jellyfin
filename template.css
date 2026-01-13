@@ -16,8 +16,13 @@ body {
 }
 
 html {
-  color: #fff;
-  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    135deg,
+    #ff8c00 0%,
+    #ff6a00 30%,
+    #1a1a1a 65%,
+    #000000 100%
+  ) !important;
 }
 
 .itemsContainer {
