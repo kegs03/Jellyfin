@@ -4,7 +4,9 @@
   --accent: 133, 100, 255; 
   --backdropBlur: blur(0px); 
   --detailGradient: linear-gradient( 54deg, rgba(var(--tint), 1) 0%, rgba(var(--tint), 0.99996337890625) 6.25%, rgba(var(--tint), 0.9994140625) 12.5%, rgba(var(--tint), 0.99703369140625) 18.75%, rgba(var(--tint), 0.990625) 25%, rgba(var(--tint), 0.97711181640625) 31.25%, rgba(var(--tint), 0.9525390625) 37.5%, rgba(var(--tint), 0.91207275390625) 43.75%, rgba(var(--tint), 0.85) 50%, rgba(var(--tint), 0.78792724609375) 56.25%, rgba(var(--tint), 0.7474609375) 62.5%, rgba(var(--tint), 0.72288818359375) 68.75%, rgba(var(--tint), 0.709375) 75%, rgba(var(--tint), 0.70296630859375) 81.25%, rgba(var(--tint), 0.7005859375) 87.5%, rgba(var(--tint), 0.70003662109375) 93.75%, rgba(var(--tint), 0.7) 100%); 
-  --loginGradient: linear-gradient( 180deg, rgba(var(--tint), 1) 0%, rgba(var(--tint), 0.99996337890625) 6.25%, rgba(var(--tint), 0.9994140625) 12.5%, rgba(var(--tint), 0.99703369140625) 18.75%, rgba(var(--tint), 0.990625) 25%, rgba(var(--tint), 0.97711181640625) 31.25%, rgba(var(--tint), 0.9525390625) 37.5%, rgba(var(--tint), 0.91207275390625) 43.75%, rgba(var(--tint), 0.85) 50%, rgba(var(--tint), 0.78792724609375) 56.25%, rgba(var(--tint), 0.7474609375) 62.5%, rgba(var(--tint), 0.72288818359375) 68.75%, rgba(var(--tint), 0.709375) 75%, rgba(var(--tint), 0.70296630859375) 81.25%, rgba(var(--tint), 0.7005859375) 87.5%, rgba(var(--tint), 0.70003662109375) 93.75%, rgba(var(--tint), 0.7) 100%); 
+  --pageGradient: linear-gradient(135deg, #ff8a00 0%, #2b0f00 100%);
+  --pageGradientDim: linear-gradient(135deg, rgba(255, 138, 0, 0.86) 0%, rgba(43, 15, 0, 0.86) 100%);
+  --loginGradient: var(--pageGradient);
   --tint: 17, 14, 30; 
   --tint2: 71, 51, 145; 
   --rounding: 0.8em;
@@ -21,7 +23,8 @@ html {
 }
 
 .backgroundContainer, .preload {
-  background-color: rgb(var(--tint));
+  background: var(--pageGradient);
+  background-attachment: fixed;
 }
 
 .itemsContainer {
@@ -43,9 +46,9 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgb(var(--tint));
+  background: var(--pageGradient);
   background-size: cover;
-  opacity: 0;
+  opacity: 1;
   z-index: -1;
   background-attachment: fixed;
   pointer-events: none;
@@ -58,7 +61,7 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(var(--tint), 0.86);
+  background: var(--pageGradientDim);
   background-size: cover;
   z-index: -1;
   background-attachment: fixed;
@@ -5656,7 +5659,8 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 }
 
 .layout-mobile .backgroundContainer { 
-  background-color: transparent;
+  background: var(--pageGradient);
+  background-attachment: fixed;
 }
 
 .layout-mobile .flex.align-items-center.flex-grow.headerTop {
