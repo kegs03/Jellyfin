@@ -20,10 +20,6 @@ html {
   color: rgba(255, 255, 255, 1);
 }
 
-.backgroundContainer, .preload {
-  background-color: rgb(var(--tint));
-}
-
 .itemsContainer {
   opacity: 0;
   animation: fadeTitle 0.3s ease-out 0s forwards;
@@ -398,7 +394,7 @@ h2 {
 
 :root {--selection: 170, 95, 200;}
 
-.backgroundContainer.withBackdrop {
+.backgroundContainer.withBackdrop, .preload {
   background: linear-gradient(
     135deg,
     #ff8c00 0%,
