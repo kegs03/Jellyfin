@@ -16,13 +16,12 @@ body {
 }
 
 html {
-  background: linear-gradient(
-    135deg,
-    #ff8c00 0%,
-    #ff6a00 30%,
-    #1a1a1a 65%,
-    #000000 100%
-  ) !important;
+  color: #fff;
+  color: rgba(255, 255, 255, 1);
+}
+
+.backgroundContainer, .preload {
+  background-color: rgb(var(--tint));
 }
 
 .itemsContainer {
@@ -44,7 +43,7 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: none;
+  background: rgb(var(--tint));
   background-size: cover;
   opacity: 0;
   z-index: -1;
@@ -59,7 +58,7 @@ html {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: none;
+  background: rgba(var(--tint), 0.86);
   background-size: cover;
   z-index: -1;
   background-attachment: fixed;
@@ -399,14 +398,8 @@ h2 {
 
 :root {--selection: 170, 95, 200;}
 
-.backgroundContainer.withBackdrop, .preload {
-  background: linear-gradient(
-    135deg,
-    #ff8c00 0%,
-    #ff6a00 30%,
-    #1a1a1a 65%,
-    #000000 100%
-  ) !important;
+.backgroundContainer.withBackdrop {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .backgroundProgress > div {
